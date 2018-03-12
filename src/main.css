@@ -1,0 +1,10 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.bold {
+  font-weight: bold; }
+
+.promo {
+  font-weight: bold;
+  background: goldenrod;
+  color: white; }
