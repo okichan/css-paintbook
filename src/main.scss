@@ -6,8 +6,23 @@
   font-weight: bold;
 }
 
-.promo {
-  font-weight: bold;
-  background: goldenrod;
-  color: white;
+.center {
+  text-align: center;
+}
+
+.test {
+  border: 1px solid lime;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  .frame {
+    // border: 1px solid lightcoral;
+    margin: 1rem;
+    padding: .4rem;
+    
+  }
 }

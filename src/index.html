@@ -3,22 +3,60 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="main.css">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <link rel="stylesheet"
+        href="main.css">
   <title>🈵Learning jQuery🈵</title>
 </head>
 
 <body>
-  <h2>Strange Animals</h2>
+  <h2 class="center">Strange Animals</h2>
 
   <div class="flex-wrapper">
     <div class="frame">
-      <h3 class="title">
+      <h3 class="title center">
         Tibetan Sand Fox
       </h3>
-      <button>?</button>
+      <button>What does it look like?</button>
+    </div>
+
+    <div class="frame">
+      <h3 class="title center">
+        Tibetan Sand Fox
+      </h3>
+      <button>What does it look like?</button>
+    </div>
+
+    <div class="frame">
+      <h3 class="title center">
+        Tibetan Sand Fox
+      </h3>
+      <button>What does it look like?</button>
+    </div>
+
+    <div class="frame">
+      <h3 class="title center">
+        Tibetan Sand Fox
+      </h3>
+      <button>What does it look like?</button>
+    </div>
+
+    <div class="frame">
+      <h3 class="title center">
+        Tibetan Sand Fox
+      </h3>
+      <button>What does it look like?</button>
+    </div>
+
+    <div class="frame">
+      <h3 class="title center">
+        Tibetan Sand Fox
+      </h3>
+      <button>What does it look like?</button>
     </div>
 
   </div>
@@ -27,11 +65,15 @@
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script>
     $(document).ready(function () {
-      $("a").click(function (event) {
+      $("button").click(function () {
         // alert("As you can see, the link no longer took you to jquery.com");
-        event.preventDefault();
+        // event.preventDefault();
         // $("a").addClass("bold");
-        $("a").hide('slow')
+        const description = $('<img src="https://pbs.twimg.com/profile_images/843378504888545281/J0gcIyiE_400x400.jpg" width=120 >')
+        $(this).after(description)
+        $('img').addClass('test')
+        $(this).hide();
+
       });
 
       $('p').click(function () {
