@@ -1,5 +1,32 @@
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  overflow: hidden; }
+  .wrapper img {
+    transition: all 0.7s ease;
+    position: absolute; }
+  .wrapper .text {
+    color: black;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px darkmagenta;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; }
+  .wrapper:hover .text {
+    opacity: 1; }
+  .wrapper:hover img {
+    opacity: 0.4;
+    transform: scale(1.3); }
 
 .bold {
   font-weight: bold; }
@@ -16,4 +43,4 @@
   flex-wrap: wrap; }
   .flex-wrapper .frame {
     margin: 1rem;
-    padding: .4rem; }
+    padding: 0.4rem; }
