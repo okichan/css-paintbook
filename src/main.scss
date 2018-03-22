@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Kokumin";
+  src: url('./ki_kokumin/font_1_kokumr_1.00_rls.ttf') format("truetype");
+}
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -67,16 +72,33 @@ $color1: #F8B195;
 $color2: #355C7D;
 
 .square {
+  position: relative;
   margin: 10px auto;
-  width: 70vw;
-  height: 50vh;
+  width: 90vw;
+  height: 20vh;
   background: linear-gradient(to right, $color1 0%, $color1 50%, $color2 50%, $color2 100% );
   
   h1 {
-    font-family: 'Poiret One', cursive;
-    text-transform: uppercase;
-    -webkit-text-stroke: 3px white;
-    letter-spacing: 6px;
-    font-size: 7vw;
+    margin: 0;
+    font-size: 3.5vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: $color1;
+    font-family: 'Kokumin', serif;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    
+    &:before {
+      letter-spacing: 5px;
+      content: attr(data-heading);
+      overflow: hidden;
+      position: absolute;
+      width: 50%;
+      left: 0;
+      top: 0;
+      color: $color2;
+    }
   }
 }
