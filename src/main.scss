@@ -15,16 +15,15 @@
   }
 
   .text {
-    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #222;
     font-size: 2rem;
-    text-shadow: 1px 1px 3px darkmagenta;
     transition: all 0.7s ease;
     white-space: nowrap;
     font-weight: bold;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     opacity: 0;
   }
 
@@ -60,5 +59,24 @@
   .frame {
     margin: 1rem;
     padding: 0.4rem;
+  }
+}
+
+
+$color1: #F8B195;
+$color2: #355C7D;
+
+.square {
+  margin: 10px auto;
+  width: 70vw;
+  height: 50vh;
+  background: linear-gradient(to right, $color1 0%, $color1 50%, $color2 50%, $color2 100% );
+  
+  h1 {
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px white;
+    letter-spacing: 6px;
+    font-size: 7vw;
   }
 }

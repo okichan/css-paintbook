@@ -3,108 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible"
-        content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet"
-        href="main.css">
-  <title>🈵Learning jQuery🈵</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <title>CSS paintbook✏️</title>
 </head>
 
 <body>
-  <h2 class="center">Strange Animals</h2>
+  <h2 class="center">CSS paintbook✏️</h2>
 
   <div class="wrapper">
     <a class="image-link clearfix"
        href="https://picsum.photos/">
       <img class="clearfix"
            src="https://picsum.photos/600/300">
-      <span class="text">Click to discover more</span>
+      <span class="text">I'm a tram with scooter choo choo</span>
     </a>
   </div>
-  <!-- <br style="clear: both;" /> -->
 
-  <div class="flex-wrapper">
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
-    <div class="frame">
-      <h3 class="title center">
-        Tibetan Sand Fox
-      </h3>
-      <button>What does it look like?</button>
-    </div>
-
+  <div class="square">
+    <h1 data-heading="たけやぶやけた">たけやぶやけた</h1>
   </div>
 
 
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("button").click(function () {
-        // alert("As you can see, the link no longer took you to jquery.com");
-        // event.preventDefault();
-        // $("a").addClass("bold");
-        const description = $('<img src="https://pbs.twimg.com/profile_images/843378504888545281/J0gcIyiE_400x400.jpg" width=120 >')
-        $(this).after(description)
-        $('img').addClass('test')
-        $(this).hide();
 
-      });
-
-      $('p').click(function () {
-        // $("p").first().text("boo");
-        $("p").first().addClass("bold");
-      })
-
-      $("ul").children('ul').addClass('bold')
-      console.table($("small").parent().parent('li').addClass('promo'));
-
-      const price = $('<p>yay</p>')
-      $('ul').before(price)
-    });
-
-    // $("a").removeClass("bold");
-
-    // $("a").click(function (event) {
-    //   event.preventDefault();
-    //   $(this).hide("slow");
-    // });
-  </script>
 </body>
 
 </html>
